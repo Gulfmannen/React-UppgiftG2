@@ -11,13 +11,17 @@ function Searchbar() {
   const submitHandler = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get(`/searched/${input}`); // Assuming you have an endpoint for search
+      const response = await axios.get(`/search/${input}`); // Assuming you have an endpoint for search
       // Handle response data as needed, e.g., navigate to search results page
-      navigate("/searched/" + input);
+      navigate("/search/" + input);
     } catch (error) {
       console.error("Error searching:", error);
       // Handle error, e.g., show error message to user
     }
+  };
+
+  const handleSearchButtonClick = () => {
+    submitHandler({ preventDefault: () => {} }); // Invoke submitHandler with a fake event
   };
 
   React.useEffect(() => {
@@ -37,6 +41,9 @@ function Searchbar() {
             value={input}
             className="topnav"
           />
+          <button type="submit" onClick={handleSearchButtonClick}>
+            Search
+          </button>
         </form>
       </div>
     </div>

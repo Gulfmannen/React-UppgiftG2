@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
-import Searched from "./Search";
+import Search from "./Search";
 import Home from "./Home";
 import Meals from "./Meals";
 import Recipe from "./Recipe";
@@ -31,7 +31,7 @@ function Pages() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
-      <Route path="/searched/:search" element={<Searched />} />
+      <Route path="/search/:search" element={<Search />} />
       <Route path="/recipe/:id" element={<Recipe />} />
       <Route
         path="/meals/:type"

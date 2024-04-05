@@ -1,15 +1,15 @@
 import { Link } from "react-router-dom";
 
-function NavCategory() {
+function Navbar() {
   return (
     <nav className="topnav">
       <ul>
         <Link to={"/"}>
-          <h4 className="active">Home</h4>
+          <h2 className="active">Home</h2>
         </Link>
       </ul>
     </nav>
   );
 }
 
-export default NavCategory;
+export default Navbar;

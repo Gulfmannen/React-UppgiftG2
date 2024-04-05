@@ -1,7 +1,7 @@
 function Home() {
   return (
     <div className="home">
-      <h1>Space-Food!</h1>
+      <h5>Matportalen Deluxe</h5>
     </div>
   );
 }

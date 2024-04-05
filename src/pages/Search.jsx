@@ -40,7 +40,6 @@ function Search() {
         <Link to={`/recipe/${item.idMeal}`} key={item.idMeal}>
           <div className="imageMeals">
             <img src={item.strMealThumb} alt="" className="mealSelection" />
-            <h4>{item.strMeal}</h4>
           </div>
         </Link>
       ))}

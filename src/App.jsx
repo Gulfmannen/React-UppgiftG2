@@ -1,4 +1,4 @@
-import NavCategory from "./components/Nav-Category";
+import Navbar from "./components/Navbar";
 import Searchbar from "./components/Searchbar";
 import Pages from "./pages/Pages";
 import "./App.css";
@@ -8,7 +8,7 @@ function App() {
   return (
     <BrowserRouter>
       <Searchbar />
-      <NavCategory />
+      <Navbar />
       <Pages />
     </BrowserRouter>
   );
