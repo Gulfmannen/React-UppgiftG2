@@ -37,7 +37,7 @@ function Searchbar() {
             ref={inputRef} // Reference the input element
             onChange={(e) => setInput(e.target.value)}
             type="text"
-            placeholder="Sök här.."
+            placeholder="Sök käk här..på englska.."
             value={input}
             className="topnav"
           />

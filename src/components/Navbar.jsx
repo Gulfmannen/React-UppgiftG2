@@ -5,7 +5,7 @@ function Navbar() {
     <nav className="topnav">
       <ul>
         <Link to={"/"}>
-          <h2 className="active">Home</h2>
+          <h2 className="active">Startsida</h2>
         </Link>
       </ul>
     </nav>
