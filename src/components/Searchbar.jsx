@@ -1,5 +1,5 @@
 import React, { useState, useRef } from "react";
-import axios from "axios"; // Import Axios
+import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import { FaSearch } from "react-icons/fa";
 
@@ -11,17 +11,16 @@ function Searchbar() {
   const submitHandler = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.get(`/search/${input}`); // Assuming you have an endpoint for search
-      // Handle response data as needed, e.g., navigate to search results page
+      const response = await axios.get(`/search/${input}`);
+
       navigate("/search/" + input);
     } catch (error) {
       console.error("Error searching:", error);
-      // Handle error, e.g., show error message to user
     }
   };
 
   const handleSearchButtonClick = () => {
-    submitHandler({ preventDefault: () => {} }); // Invoke submitHandler with a fake event
+    submitHandler({ preventDefault: () => {} });
   };
 
   React.useEffect(() => {
@@ -34,7 +33,7 @@ function Searchbar() {
         <form onSubmit={submitHandler}>
           <FaSearch />
           <input
-            ref={inputRef} // Reference the input element
+            ref={inputRef}
             onChange={(e) => setInput(e.target.value)}
             type="text"
             placeholder="Sök käk här..på englska.."
@@ -42,7 +41,7 @@ function Searchbar() {
             className="topnav"
           />
           <button type="submit" onClick={handleSearchButtonClick}>
-            Search
+            Sök
           </button>
         </form>
       </div>

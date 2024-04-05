@@ -1,4 +1,3 @@
-/* Reset CSS */
 * {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
@@ -6,23 +5,28 @@
   box-sizing: border-box;
 }
 
-/* Global Styles */
 body {
-  background-image: url(images/bg-3.f0c5bd0.png);
-  font-family: Arial, sans-serif;
+  background-image: url(images/90tal1.png);
   background-color: #f0f0f0;
   color: #333;
+  font-family: Arial, sans-serif;
 }
+
 h1 {
-  color: #1a1a1a;
+  text-shadow: rgb(255, 0, 200) 0px 0px 15px;
   font-size: 2.5rem;
+  color: #ffffff;
   padding-left: 30%;
+  margin: -25px;
 }
+
 h5 {
-  padding-top: 2.5rem;
+  color: white;
+  text-shadow: rgb(255, 0, 200) 0px 0px 15px;
   font-size: 3.6rem;
-  animation: pulse 2s infinite;
+  padding-top: 2.5rem;
   text-align: center;
+  animation: pulse 2s infinite;
 }
 
 path {
@@ -30,7 +34,8 @@ path {
 }
 
 h2 {
-  color: #1a1a1a;
+  text-shadow: rgb(255, 0, 200) 0px 0px 15px;
+  color: #ffffff;
   text-align: left;
   margin: 20px;
   text-decoration: none;
@@ -41,10 +46,14 @@ h2.active {
 }
 
 input {
-  margin-top: 20px;
   width: 220px;
   height: 30px;
+  margin-top: 20px;
   margin-left: 1%;
+}
+input.topnav {
+  font-weight: bold;
+  color: #f700ff;
 }
 
 .container {
@@ -53,18 +62,19 @@ input {
   padding: 20px;
 }
 
-/* Header Styles */
 header {
-  color: #1a1a1a;
-  color: #fff;
   padding: 20px 0;
   text-align: center;
+  color: #fff;
 }
 
 button {
+  color: white;
+  text-shadow: rgb(255, 0, 212) 0px 0px 10px;
   width: 75px;
   height: 30px;
   font-size: medium;
+  font-weight: bold;
 }
 
 .logo {
@@ -72,7 +82,6 @@ button {
   font-weight: bold;
 }
 
-/* Navigation Styles */
 nav {
   text-align: center;
   margin-top: 20px;
@@ -98,7 +107,6 @@ nav ul li a:hover {
   color: #ffcc00;
 }
 
-/* Main Content Styles */
 main {
   padding: 20px 0;
 }
@@ -109,7 +117,6 @@ main {
   margin-bottom: 20px;
 }
 
-/* Recipe Styles */
 .recipe-container {
   display: flex;
   flex-wrap: wrap;
@@ -117,40 +124,35 @@ main {
 }
 
 .recipe {
+  width: calc(33.3333% - 20px);
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   overflow: hidden;
-  width: calc(33.3333% - 20px);
 }
 
 img.mealSelection {
-  transition: 1s ease;
+  box-shadow: rgba(255, 0, 200, 0.486) 0px 0px 150px;
   width: 550px;
-  border-radius: 100%;
   height: auto;
-  filter: grayscale(100%);
-  -webkit-filter: grayscale(100%);
-  -webkit-transition: all 1s ease;
-  border: solid rgb(119, 119, 119) 3.6px;
-
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
+  border-radius: 100%;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  transition: all 1s ease;
+  border: solid rgb(119, 119, 119) 3.6px;
 }
 
 img.mealSelection:hover {
   filter: grayscale(0%);
-  filter: gray;
   -webkit-filter: grayscale(0%);
-  filter: none;
   transition: 1s ease;
-
   -webkit-transform: scale(1.05);
   -ms-transform: scale(1.05);
   transform: scale(1.05);
-  transition: 1s ease;
 }
 
 @keyframes pulse {
@@ -164,21 +166,13 @@ img.mealSelection:hover {
 }
 
 img.recipe-img {
-  border-radius: 50%;
-  border: 5px solid #f0f;
-  height: 30px;
-  width: 30px;
+  box-shadow: rgba(255, 0, 200, 0.486) 0px 0px 150px;
+  width: 550px;
+  height: auto;
+  border-radius: 100%;
   animation: pulse 2s infinite;
   transition: 1s ease;
   border: solid rgba(0, 0, 0, 0.39) 3px;
-  border-radius: 45px;
-  width: 550px;
-  border-radius: 100%;
-  height: auto;
-}
-
-h2 {
-  margin: 20px;
 }
 
 h4 {
@@ -187,7 +181,7 @@ h4 {
 
 li {
   color: #1a1a1a;
-  background-color: rgba(37, 37, 37, 0.226);
+  background-color: rgba(255, 255, 255, 0.712);
   border: solid rgba(0, 0, 0, 0.384) 2px;
   border-radius: 3px;
   margin: 8px;
@@ -196,14 +190,14 @@ li {
 
 p {
   color: #1a1a1a;
-  background-color: rgba(37, 37, 37, 0.226);
+  background-color: rgba(255, 255, 255, 0.712);
   border: solid rgba(0, 0, 0, 0.39) 2px;
   border-radius: 3px;
   font-size: 1.1rem;
   font-weight: bold;
-
   margin: 20px;
 }
+
 .recipe img {
   border-radius: 50px;
   width: 100%;
@@ -227,7 +221,6 @@ p {
   margin-bottom: 10px;
 }
 
-/* Footer Styles */
 footer {
   background-color: #333;
   color: #fff;
@@ -235,7 +228,6 @@ footer {
   text-align: center;
 }
 
-/* Media Queries */
 @media screen and (max-width: 768px) {
   .recipe {
     width: calc(50% - 20px);
